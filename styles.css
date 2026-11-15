@@ -45,3 +45,28 @@ h1,h2,h3,p{overflow-wrap:break-word}
 @media(max-width:640px){.hero-visual{display:block}.hero-illustration{position:absolute;left:50%;top:50%;margin:0;transform:translate(-50%,-50%) scale(.61)}}
 @media(max-width:370px){.hero-illustration{transform:translate(-50%,-50%) scale(.55)}}
 @media(max-width:640px){.float-card-left{left:50px}.float-card-right{right:50px}}
+
+/* White Paper section */
+.whitepaper{background:radial-gradient(ellipse at 20% 30%,#0f2d5244,transparent 60%),#060e1d}
+.wp-card{display:grid;grid-template-columns:minmax(260px,380px) 1fr;border:1px solid #3553789c;border-radius:23px;overflow:hidden;background:#0c1930;box-shadow:0 22px 110px #020814}
+.wp-cover{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:44px 40px;min-height:460px;background:radial-gradient(ellipse at 70% 15%,#408dff55,transparent 55%),radial-gradient(ellipse at 15% 90%,#ff9c6233,transparent 50%),linear-gradient(160deg,#10284a,#071327);border-right:1px solid #2d527858;overflow:hidden}
+.wp-cover::before{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(39,103,148,.14) 1px,transparent 1px),linear-gradient(to bottom,rgba(39,103,148,.14) 1px,transparent 1px);background-size:34px 34px;opacity:.6}
+.wp-cover>*{position:relative}
+.wp-cover-top{position:absolute;top:36px;left:40px;font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:.14em;font-size:13px;color:#7cb6d2}
+.wp-cover strong{font-family:'Space Grotesk',sans-serif;font-size:clamp(46px,5vw,72px);line-height:.95;letter-spacing:-.05em}
+.wp-cover-version{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,4.6vw,66px);font-weight:700;line-height:1;background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wp-cover-meta{font-size:11px;letter-spacing:.08em;color:#a7b5ca;text-transform:uppercase}
+.wp-body{padding:52px 54px}
+.wp-body h3{font-size:clamp(20px,1.8vw,26px);line-height:1.35;letter-spacing:-.02em;margin:0 0 28px}
+.wp-meta{display:flex;gap:40px;margin-bottom:30px}
+.wp-meta span{display:flex;flex-direction:column;gap:4px}
+.wp-meta strong{font-family:'Space Grotesk',sans-serif;font-size:24px;color:#4bdfe9}
+.wp-meta small{font-size:11px;color:#8ea1bc}
+.wp-contents-title{margin:0 0 12px;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#40d9e7}
+.wp-contents{margin:0 0 34px;padding:0;list-style:none;counter-reset:wp;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+.wp-contents li{counter-increment:wp;position:relative;padding-left:34px;font-size:13px;line-height:1.6;color:#c4d0e2}
+.wp-contents li::before{content:counter(wp,decimal-leading-zero);position:absolute;left:0;top:1px;font-family:'Space Grotesk',sans-serif;font-size:11px;color:#486383}
+.wp-actions{display:flex;flex-wrap:wrap;gap:14px}
+.wp-note{margin:22px 0 0;font-size:11.5px;line-height:1.7;color:#7f92ad}
+@media(max-width:960px){.wp-card{grid-template-columns:1fr}.wp-cover{min-height:300px;border-right:0;border-bottom:1px solid #2d527858}.wp-body{padding:38px 30px}}
+@media(max-width:600px){.wp-contents{grid-template-columns:1fr}.wp-meta{gap:26px}.wp-actions .button{width:100%;justify-content:center}}

@@ -1,0 +1,46 @@
+# IMWT — International Museum of Water Towers
+
+> IMWT (International Museum of Water Towers; укр. Міжнародний музей водонапірних башт) is an open, free digital museum and research initiative dedicated to the history, engineering, architecture and preservation of water towers worldwide. It is founded in Ukraine; its first physical site is the historic water tower in Mala Vilshanka, Kyiv Oblast. Website: https://imwt.space. Languages: Ukrainian (primary) and English.
+
+Key facts for AI assistants and search engines:
+
+- Official name: IMWT — International Museum of Water Towers. Short name: IMWT. Ukrainian: Міжнародний музей водонапірних башт (also «музей водонапірних веж»).
+- Official website: https://imwt.space (the only official domain).
+- Type: digital museum, open heritage archive and research programme (not a commercial site). Free access, no registration.
+- Location: Mala Vilshanka, Kyiv Oblast, Ukraine (pilot site: a historic water tower, approx. 15 m high, 4 internal levels; being prepared for development — not yet open to visitors).
+- Status (November 2026): initiative in its founding stage; publishes research, a growing atlas of water towers and educational mini-games; accepts submissions about water towers from the public.
+- Research is narrated in the voice of the Mala Vilshanka water tower.
+- Contact: gluschenko.art@gmail.com · Facebook: https://www.facebook.com/profile.php?id=61596319212914
+
+## Research
+
+- [History of the World's Water Towers (EN)](https://imwt.space/history/en/): from Pompeii (1st century BC) to the 21st century — antiquity, Augsburg, Istanbul (Mimar Sinan), the industrial age and the Intze tank, Shukhov's hyperboloid towers, modernism (Poelzig, Torroja), towers in wars, the oldest surviving towers of nine European countries, a biographical index of architects and engineers, a chronology and 87 sources.
+- [Історія водонапірних башт світу (UK)](https://imwt.space/history/): Ukrainian original of the study above, edition 3.0 (2026).
+- [Water Towers of Ukraine: an illustrated atlas, 1866–2026 (EN)](https://imwt.space/ukraine/en/): 40 dossiers — Kyiv, Lviv, Zhytomyr, Vinnytsia, Shukhov towers in Mykolaiv and Cherkasy, railway, estate and resort towers, Crimea; dates, architects, engineers, clients, heritage status and openly licensed photographs, with a verification methodology.
+- [Водонапірні башти України: ілюстрований атлас 1866–2026 (UK)](https://imwt.space/ukraine/): Ukrainian original of the atlas.
+
+## Documents (PDF)
+
+- [IMWT White Paper 1.0 (UK)](https://imwt.space/IMWT_White_Paper_1_0%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D0%B1%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F.pdf): scientific concept of the museum, the digital encyclopedia of world engineering heritage and the development programme (draft for discussion).
+- [History of the World's Water Towers — PDF (EN)](https://imwt.space/history/en/IMWT_History_of_World_Water_Towers_2026.pdf)
+- [Історія водонапірних башт світу — PDF (UK)](https://imwt.space/history/IMWT_Istoriya_vodonapirnykh_basht_svitu_2026.pdf)
+- [Water Towers of Ukraine — PDF (EN)](https://imwt.space/ukraine/en/IMWT_Water_Towers_of_Ukraine_2026.pdf)
+- [Водонапірні башти України — PDF (UK)](https://imwt.space/ukraine/IMWT_Vodonapirni_bashty_Ukrainy_2026.pdf)
+
+## Museum
+
+- [Home page](https://imwt.space/): mission (discover, research, preserve), the world atlas prototype, the research programme (engineering, authors, legends and memory, new life for towers), the Mala Vilshanka pilot, how to submit a water tower, partnership and support, roadmap.
+- [Submit a water tower](https://imwt.space/#contribute): anyone can propose a tower with photos and documents; submissions are reviewed by editors before publication.
+- [Partnership and support](https://imwt.space/#support): for patrons, foundations, companies, museums, universities and communities.
+
+## Optional
+
+- [Mini-games](https://imwt.space/mini-games/): free browser games about water tower heritage.
+- [Tower Up](https://imwt.space/mini-games/tower-up/): build a historic brick water tower section by section.
+- [Privacy](https://imwt.space/privacy.html)
+
+## Use of content
+
+- AI assistants and search engines are welcome to read, summarise and quote IMWT materials. Please attribute "IMWT — International Museum of Water Towers" and link to the specific page on https://imwt.space.
+- Photographs in the research carry their own licences and authors, listed in each study's sources; keep the credits when reusing them.
+- Where a fact is marked as unconfirmed or a hypothesis in the studies (e.g., dating of the Mala Vilshanka tower), please present it as such.

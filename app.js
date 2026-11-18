@@ -41,7 +41,9 @@ if('IntersectionObserver' in window){const obs=new IntersectionObserver(entries=
 document.getElementById('year').textContent=new Date().getFullYear();
 function feedback(form,message){const el=document.getElementById(form.id==='towerForm'?'towerFeedback':'partnerFeedback');el.textContent=message;el.scrollIntoView({behavior:'smooth',block:'nearest'});}
 const maxBytes=8*1024*1024;
+const FORM_ENDPOINT='https://formsubmit.co/ajax/gluschenko.art@gmail.com';
 for(const form of document.querySelectorAll('form[data-netlify="true"]')){
+ form.dataset.openedAt=String(Date.now());
  form.addEventListener('submit',e=>{
    const isLocal=location.protocol==='file:'||['localhost','127.0.0.1'].includes(location.hostname);
    if(form.id==='towerForm'){
@@ -50,6 +52,24 @@ for(const form of document.querySelectorAll('form[data-netlify="true"]')){
      if(total>maxBytes){e.preventDefault();feedback(form,lang==='uk'?'Сумарний розмір файлів перевищує 8 МБ. Використайте посилання на архів або зменште файли.':'Total attachments exceed 8 MB. Please use a cloud-folder link or smaller files.');return;}
    }
    if(isLocal){e.preventDefault();feedback(form,lang==='uk'?'Це локальна демонстрація. Форми працюють лише на опублікованому сайті.':'This is a local preview. Forms work only on the published site.');return;}
-   // Native HTML POST is intentional: preserves multipart file uploads and works with Netlify Forms.
+   // Secure AJAX submission (FormSubmit delivers imwt.space submissions only via its AJAX endpoint)
+   e.preventDefault();
+   if(form.dataset.sending==='1') return;
+   const uk=lang==='uk';
+   const hp=form.querySelector('input[name="_honey"]');
+   const tooFast=(Date.now()-(Number(form.dataset.openedAt)||0))<3000;
+   if((hp&&hp.value)||tooFast){ location.href='/success.html'; return; }
+   const btn=form.querySelector('button[type="submit"]');
+   form.dataset.sending='1'; if(btn){btn.disabled=true;btn.setAttribute('aria-busy','true');}
+   feedback(form,uk?'Надсилаємо…':'Sending…');
+   const data=new FormData(form);
+   for(const k of ['_captcha','_next','form-name','website','company_website']) data.delete(k);
+   for(const [k,v] of [...data.entries()]){ if(v instanceof File && v.size===0) data.delete(k); }
+   const ctrl=new AbortController(); const timer=setTimeout(()=>ctrl.abort(),45000);
+   fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:data,signal:ctrl.signal,referrerPolicy:'strict-origin-when-cross-origin'})
+    .then(r=>r.json().catch(()=>({})).then(j=>({ok:r.ok,j})))
+    .then(({ok,j})=>{ if(ok&&String(j.success)==='true'){ location.href='/success.html'; } else { throw new Error(j.message||'send failed'); } })
+    .catch(()=>{ feedback(form,uk?'Не вдалося надіслати. Спробуйте ще раз або напишіть нам: gluschenko.art@gmail.com':'Could not send. Please try again or email us: gluschenko.art@gmail.com'); })
+    .finally(()=>{ clearTimeout(timer); form.dataset.sending='0'; if(btn){btn.disabled=false;btn.removeAttribute('aria-busy');} });
  });
 }

@@ -27,6 +27,6 @@ User-agent: MistralAI-User
 User-agent: CCBot
 Allow: /
 Disallow: /success.html
-Disallow: /IMWT_site_v3/
+Disallow: /tools/
 
 Sitemap: https://imwt.space/sitemap.xml

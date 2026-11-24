@@ -14,7 +14,7 @@ document.getElementById('year').textContent=new Date().getFullYear();
 function feedback(form,message){const el=document.getElementById(form.id==='towerForm'?'towerFeedback':'partnerFeedback');el.textContent=message;el.scrollIntoView({behavior:'smooth',block:'nearest'});}
 const maxBytes=8*1024*1024;
 const FORM_ENDPOINT='https://formsubmit.co/ajax/gluschenko.art@gmail.com';
-for(const form of document.querySelectorAll('form[data-netlify="true"]')){
+for(const form of document.querySelectorAll('form#towerForm, form#partnerForm')){
  form.dataset.openedAt=String(Date.now());
  form.addEventListener('submit',e=>{
    const isLocal=location.protocol==='file:'||['localhost','127.0.0.1'].includes(location.hostname);
